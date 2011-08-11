@@ -38,8 +38,6 @@ Class extend [
 	| methods assoc |
 	methods := SortedCollection sortBlock: [:a :b | a displayString <= b displayString].
 	assoc := self environment associationAt: self name asSymbol.
-	"For all selectors which refer to the selected class, add the class name
-	 concatenated with selector name in the sorted collection 'methods'"
 	CompiledMethod 
 	    allInstancesDo: [:method | (method refersTo: assoc) ifTrue: [methods add: method]].
 	^methods
