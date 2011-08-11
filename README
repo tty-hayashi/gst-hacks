@@ -1,0 +1,2 @@
+gst-hacks is a set of methods to hack for GNU Smalltalk (GST).
+Put init.st file into your ~/.st directory.
