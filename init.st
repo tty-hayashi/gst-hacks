@@ -79,3 +79,9 @@ Class extend [
 	^methods
     ]
 ]
+
+CompiledMethod extend [
+    src [
+	^self methodSourceString
+    ]
+]
